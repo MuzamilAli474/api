@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     const promises1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let ali = true;
+//     if (ali) {
+//       resolve("Ali is a good man");
+//     } else {
+//       reject("Ali is no good man");
+//     }
+//   }, 2000);
+// });
+
+// const promises2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let a = 2;
+//     if (a === 2) {  // Use '===' for comparison
+//       resolve("true");
+//     } else {
+//       reject("false");
+//     }
+//   }, 1000);
+// });
+
+// // Chaining promises
+// promises1
+//   .then((result) => {
+//     console.log(result);
+//     return promises2; // Return promises2 to chain it
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log("error:", error);
+//   });
+
+debugger
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// function calculate(operation, a, b) {
+//     return operation(a, b);
+// }
+
+// console.log(calculate(add, 5, 3));  // Output: 8
+function sum(a) {
+    return (b) => {
+        return (c) => {
+            return a + b + c
+        }
+    }
+}
+console.log(sum(1)(2)(3)) 
+
+  </script>
+</body>
+</html>
